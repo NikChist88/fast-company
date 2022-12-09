@@ -12,15 +12,12 @@ code {
         monospace;
 }
 
-nav {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
 .wrapper {
-    margin: 20px auto;
+    padding: 20px;
+    margin: 0px auto;
     max-width: 1800px;
+    display: flex;
+    justify-content: center;
 }
 
 .bi {
