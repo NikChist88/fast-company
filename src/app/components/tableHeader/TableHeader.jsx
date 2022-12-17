@@ -14,13 +14,12 @@ const TableHeader = ({ onSort, selectedSort, columns }) => {
     };
 
     const handleIconArrow = (item) => {
-        if (selectedSort.path === item && selectedSort.order === "asc") {
-            return "bi bi-caret-up-fill";
-        } else if (
-            selectedSort.path === item &&
-            selectedSort.order === "desc"
-        ) {
-            return "bi bi-caret-down-fill";
+        if (selectedSort.path === item) {
+            if (selectedSort.order === "asc") {
+                return "bi bi-caret-up-fill";
+            } else {
+                return "bi bi-caret-down-fill";
+            }
         }
     };
 
